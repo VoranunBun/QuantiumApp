@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GoogleChartInterface, GoogleChartType } from 'ng2-google-charts';
 declare var $: any;
 
 @Component({
@@ -16,4 +17,6 @@ export class LayoutComponent implements OnInit {
   burgerMenuClick() {
     $("body").toggleClass("enlarge-menu");
   }
+
+  
 }

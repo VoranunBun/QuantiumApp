@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { sampleData } from './datasource';
+import sampleData from './datasource.json';
 
 @Component({
   selector: 'app-file-manager',
@@ -14,5 +14,4 @@ export class FileManagerComponent implements OnInit {
   ngOnInit(): void {
     this.data = sampleData;
   }
-
 }

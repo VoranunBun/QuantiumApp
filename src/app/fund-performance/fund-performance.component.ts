@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, OnInit } from '@angular/core';
 import { GoogleChartInterface, GoogleChartType } from 'ng2-google-charts';
-import fundtabledata from './fund-table.json';
+import { FuncsService } from '../services/funcs.services';
+import tabledata from './fund-table.json';
 import fundlinedata from './fund-line.json';
 import funddonutdata from './fund-donut.json';
 
@@ -13,15 +14,15 @@ export class FundPerformanceComponent implements OnInit {
 
   private data: any;
 
-  constructor() { 
+  constructor(private funcs: FuncsService) { 
     
   }
  
   
   ngOnInit(): void {
-    this.ConvertDataTable(funddonutdata,this.donutChart);
-    this.ConvertDataTable(fundlinedata,this.lineChart);
-    this.ConvertDataTable(fundtabledata,this.tableChart,true);
+    this.funcs.ConvertDataTable(funddonutdata,this.donutChart);
+    this.funcs.ConvertDataTable(fundlinedata,this.lineChart);
+    this.funcs.ConvertDataTable(tabledata,this.tableChart,true);
   }
   public donutChart: GoogleChartInterface = {
     chartType: GoogleChartType.PieChart,
@@ -75,52 +76,4 @@ export class FundPerformanceComponent implements OnInit {
       }
     ]
   };
-  
-  ConvertDataTable(jsonobj:object, chart:GoogleChartInterface,addtotal:boolean = false ){
-    var fundtable: any[] = [];
-    var haveheader = false;
-    var sumrow: any[] = [];
-    Object.values(jsonobj).forEach(function (obj) {
-        // row
-        var hrow: any[] = [];
-        if(haveheader == false){
-          Object.keys(obj).forEach(function (col){
-            // push header column data
-            hrow.push(col);
-            sumrow.push(null);
-            haveheader = true;
-          });
-          fundtable.push(hrow);
-        }
-        var row: any[] = [];
-        var i =0;
-        Object.values(obj).forEach(function (col){
-          // push column data
-          row.push(col);
-          if(col != null){
-            var num = Number(col);
-            if(!isNaN(+num)){           
-              if(sumrow[i] == null)
-                sumrow[i] = {v: 0,p: {className: 'TotalCell'}};
-              
-              sumrow[i]["v"] +=col;
-            }
-            else{
-              sumrow[i] = {v: "",p: {className: 'TotalCell'}};
-            }
-          }
-          else
-            sumrow[i] = {v: "",p: {className: 'TotalCell'}};
-          i++;
-        });
-        // push row data
-        fundtable.push(row);
-    });
-    if(addtotal == true){
-      sumrow[0] = {v: 'Total',p: {className: 'TotalCell'}};
-      fundtable.push(sumrow);
-    }
-    chart.dataTable = fundtable;
-  }
- 
 }
