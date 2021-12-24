@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/6bef0557-4d33-4c3b-9b01-d1842523d046/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/quantiumapp",
+    "appService.deploySubpath": "dist\\quantiumfund"
+}

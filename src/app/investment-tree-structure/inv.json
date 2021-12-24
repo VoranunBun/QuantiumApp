@@ -1,0 +1,117 @@
+[
+    {
+    "ID": 99,
+    "Name": "Jiye",
+    "Type": "Parallel Fund",
+    "Parent": 0,
+    "GPs": 1,
+    "LPs": 16
+    },
+    {
+    "ID": 100,
+    "Name": "Jianye",
+    "Type": "Parallel Fund",
+    "Parent": 0,
+    "GPs": 1,
+    "LPs": 44
+    },
+    {
+    "ID": 101,
+    "Name": "Xingye",
+    "Type": "Parallel Fund",
+    "Parent": 0,
+    "GPs": 1,
+    "LPs": 37
+    },
+    {
+    "ID": 102,
+    "Name": "Hongye",
+    "Type": "Parallel Fund",
+    "Parent": 0,
+    "GPs": 1,
+    "LPs": 27
+    },
+    {
+    "ID": 103,
+    "Name": "Xingye",    
+    "Type": "Parallel Fund",
+    "Parent": 0,
+    "GPs": 1,
+    "LPs": 2
+    },
+    {
+    "ID": 1,
+    "Name": "Sungu",
+    "Type": "SPV",
+    "Parent": 99
+    },
+    {
+    "ID": 2,
+    "Name": "Menggu",
+    "Type": "SPV",
+    "Parent": 100
+    },
+    {
+    "ID": 3,
+    "Name": "Newgu",
+    "Type": "SPV",
+    "Parent": 2
+    },
+    {
+    "ID": 4,
+    "Name": "Juye",
+    "Type": "SPV",
+    "Parent": 102
+    },
+    {
+    "ID": 12,
+    "Name": "Wework",
+    "Parent": 1
+    },
+    {
+    "ID": 13,
+    "Name": "Xiaomi",
+    "Parent": 3
+    },
+    {
+    "ID": 14,
+    "Name": "Company C",
+    "Parent": 4
+    },
+    {
+    "ID": 15,
+    "Name": "Company D",
+    "Parent": 4
+    },
+    {
+    "ID": 16,
+    "Name": "Company E",
+    
+    "Parent": 4
+    },
+    {
+    "ID": 17,
+    "Name": "Company F",
+    "Parent": 4
+    },
+    {
+    "ID": 18,
+    "Name": "Company G",
+    "Parent": 4
+    },
+    {
+    "ID": 19,
+    "Name": "Company H",
+    "Parent": 4
+    },
+    {
+    "ID": 20,
+    "Name": "Company I",
+    "Parent": 4
+    },
+    {
+    "ID": 21,
+    "Name": "Company J",
+    "Parent": 4
+    }
+    ]

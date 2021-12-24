@@ -1,0 +1,31 @@
+[{
+    "Fund": "GGV USD Fund V",
+    "Invest Entity": "Asia Alternative I",
+    "Commitment": 1.0,
+    "Invested": 1.0,
+    "Realized": 1.0,
+    "Remaining Fair Value": 1.0,
+    "Gross MoC": 2.0,
+    "Net IRR": 20.0
+},
+{
+  "Fund": "GGV USD Fund VI",
+  "Invest Entity": "Asia Alternative Asia",
+  "Commitment": 1.0,
+  "Invested": 1.0,
+  "Realized": 1.0,
+  "Remaining Fair Value": 1.0,
+  "Gross MoC": 2.0,
+  "Net IRR": 20.0
+},
+{
+  "Fund": "GGV USD Fund VI",
+  "Invest Entity": "Asia Alternative I",
+  "Commitment": 1.0,
+  "Invested": 1.0,
+  "Realized": 1.0,
+  "Remaining Fair Value": 1.0,
+  "Gross MoC": 2.0,
+  "Net IRR": 20.0
+}
+]

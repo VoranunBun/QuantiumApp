@@ -1,0 +1,34 @@
+[
+  {
+    "Industry": "Energy",
+    "Number of assets":1
+  },
+  {
+    "Industry": "Consumer Durables & Apparel",
+    "Number of assets":1
+  },
+  {
+    "Industry": "Consumer Services",
+    "Number of assets":1
+  },
+  {
+    "Industry": "Insurance",
+    "Number of assets":1
+  },
+  {
+    "Industry": "Materials",
+    "Number of assets":1
+  },
+  {
+    "Industry": "Software & Services",
+    "Number of assets":1
+  },
+  {
+    "Industry": "Technology Hardware & Equipment",
+    "Number of assets":1
+  },
+  {
+    "Industry": "Heath Care Equipment & Service",
+    "Number of assets":1
+  }
+]

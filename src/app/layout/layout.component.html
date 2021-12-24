@@ -1,0 +1,45 @@
+<div class="leftbar-tab-menu">   
+    <div class="main-menu-inner">
+        <!-- LOGO -->
+        <div class="topbar-left">
+            <a href="#" class="logo">
+                <span>
+                    <img src="../../assets/assets/images/ggvlogo.jpg" alt="logo-large" class="logo-lg logo-dark">
+                    <img src="../../assets/assets/images/ggvlogo.jpg" alt="logo-large" class="logo-lg logo-light">
+                </span>
+            </a>
+        </div>
+        <!--end logo-->
+        <div class="menu-body slimscroll">                    
+             <div >
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/home']" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/fund-performance']" href="#">Fund Performance</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/investor-summary']" href="#">Investor Summary</a></li>
+                    <li class="nav-item"><a class="nav-link"[routerLink]="['/file-manager']" href="#">File Manager</a></li> 
+                    <li class="nav-item"><a class="nav-link"[routerLink]="['/investment-tree-structure']" href="#">Investment Tree Structure</a></li> 
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/']" href="#">Logout</a></li>
+                </ul>
+            </div><!-- end Dashboards -->               
+
+           
+        </div><!--end menu-body-->
+    </div><!-- end main-menu-inner-->
+</div>
+<!-- end leftbar-tab-menu-->
+
+<!-- Top Bar Start -->
+<div class="topbar">           
+    <!-- Navbar -->
+    <nav class="navbar-custom">   
+        <ul class="list-unstyled topbar-nav mb-0">  
+            <li>
+                <button (click)="burgerMenuClick()" id="btnmenu" class="button-menu-mobile nav-link waves-effect waves-light">
+                    <i  class="dripicons-menu nav-icon"></i>
+                </button>
+            </li>           
+        </ul>
+    </nav>
+    <!-- end navbar-->
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,57 @@
+<div class="page-wrapper">
+    <!-- Page Content-->
+    <div class="page-content-tab">
+
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="float-right">
+                            <div class="btn-group mb-4">
+                                <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD <i class="mdi mdi-chevron-down"></i></button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">USD</a>
+                                    <a class="dropdown-item" href="#">THB</a>
+                                </div>
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                            </div><!-- /btn-group -->
+                        </div>
+                        <h4 class="page-title">Asia Alternatives Summary</h4>
+                    </div><!--end page-title-box-->
+                </div><!--end col-->
+            </div>
+            <!-- end page title end breadcrumb -->
+            <div class="row">
+                <div class="col-lg-12 col-xl-7">
+                    <div class="card">
+                        <div class="card-body">            
+                            <h4 class="mt-0 header-title">Value Creation Q1 2021</h4>                                  
+                            <google-chart [data]="stackChart"></google-chart>                    
+                        </div><!--end card-body-->
+                    </div><!--end card-->
+                </div> <!-- end col -->
+                <div class="col-lg-12 col-xl-5">
+                    <div class="card">
+                        <div class="card-body">            
+                            <h4 class="mt-0 header-title">Aggregated overview</h4>
+                            <google-chart [data]="table1Chart"></google-chart>                                      
+                        </div><!--end card-body-->
+                    </div><!--end card-->
+                </div>  <!-- end col -->                   
+            </div> <!-- end row -->        
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="card">
+                        <div class="card-body">            
+                            <h4 class="mt-0 header-title">Asia Alternatives performance by fund</h4>
+                            <google-chart [data]="table2Chart"></google-chart>                   
+                        </div><!--end card-body-->
+                    </div><!--end card-->
+                </div>  <!-- end col -->   
+            </div> <!-- end row -->       
+
+        </div><!-- container -->
+    </div>
+    <!-- end page content -->
+</div>
